@@ -24,7 +24,6 @@ async def on_ready():
 async def on_member_join(member):
     responses= [f'{member.mention} has arrived!',
                 f'Welcome to the server {member.mention}.',
-                f'Dekho wo aa gaya,{member.mention} aa gaya.',
                 f'{member.mention}, we are happy that you are here.',
                 f'Thanks for joining {member.mention}']
 
