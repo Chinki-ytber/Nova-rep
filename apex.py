@@ -1,10 +1,6 @@
-import os
 import discord
 from discord.ext import commands
 import random
-import datetime
-import pytz
-from keep_alive import keep_alive
 
 client = discord.Client()
 
@@ -45,10 +41,7 @@ async def help(ctx):
 @client.command()
 async def developer(ctx):
   Embed = discord.Embed(title= "__Developer__", description='This bot is created by <your-name> ', color=ctx.author.color)
-
   await ctx.send(embed= Embed)
-
-
 
 
 client.run(api key)
