@@ -1,6 +1,7 @@
 /*
 QUESTION OF THE DAY!
 COMPLETE THE CODE CHALLENGE.
+#Done
 
 Q) Write a program to take input of two matrix of dimension NxN and MxM and add them if they are of the same dimensions*/
 
@@ -20,6 +21,8 @@ int main(){
     cout<<"enter number of column for matrix B: ";cin>>q;
     int mat2[p][q];
     
+    if(m==p && n==q){
+    
         cout<<"Enter element of matrix A: "<<endl;
         for(i=0;i<m;i++){
             for(j=0;j<n;j++){
@@ -35,8 +38,16 @@ int main(){
                 cin>>mat2[i][j];
             }
         }
+        cout<<"Matrix after addition: "<<endl;
+        for(i=0;i<m;i++){
+            for(j=0;j<n;j++){
+                cout<<(mat1[i][j] + mat2[i][j]);
+            }
+            cout<<endl;
+        }
+    }
+    else{
+        cout<<"Enter both the matrices of same dimensions";
+    }
+    
 }
-
-
-// HINTS: you might have to add a loop and addition funtion.
-// looking for Basic code.
