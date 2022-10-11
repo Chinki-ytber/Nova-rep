@@ -1,7 +1,7 @@
 #Question of the DAY!
 ##complete the code challenge
 
-#place the if/elif statements properly so that when the user give anynumber between 1 to 4 as opt the proper result may come.
+
 
 
 ch1 = "Y"
@@ -14,9 +14,33 @@ while(ch1 == "Y" or ch1 == "y"):
 
     opt = int(input("Enter your selection: "))
 
-    #===========================
-    #your code here
-    #===========================
+    if opt == 1:
+        num1= float(input("enter 1st number: "))
+        num2= float(input("enter 2nd number: "))
+        sum = num1 + num2
+
+        print(f"sum of {num1} and {num2} is: ",sum )
+
+    elif opt == 2:
+        num1= float(input("enter 1st number: "))
+        num2= float(input("enter 2nd number: "))
+        sub = num1 - num2
+
+        print(f"difference of {num1} and {num2} is: ",sub )
+
+    elif opt == 3:
+        num1= float(input("enter 1st number: "))
+        num2= float(input("enter 2nd number: "))
+        into = num1 * num2
+
+        print(f"{num1} times {num2} is: ",into )
+
+    elif opt == 4:
+        num1= float(input("enter 1st number: "))
+        num2= float(input("enter 2nd number: "))
+        sub = num1 / num2
+
+        print(f"{num1} divided by {num2} is: ",sub )
 
     else:
         print("Enter a valid option")
