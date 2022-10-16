@@ -37,6 +37,14 @@ class sphere : public shape{
 
 };
 
-//=====================================
-//==========Complete the code==========
-//=====================================
+int main(){
+    shape *ptr;
+    ptr = new cube;
+    ptr->findvol();
+    delete ptr;
+    cout<<endl;
+    ptr=new sphere();
+    ptr->findvol();
+    delete ptr;
+    return 0;
+}
